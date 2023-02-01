@@ -5,7 +5,7 @@ from PIL import Image
 from keras.models import load_model
 
 
-emotion_model = load_model("emotions.h5")
+emotion_model = load_model("emotions_aug.h5")
 emotion_labels = ['Angry', 'Disgust','Fear','Happy', 'Sad', 'Surprise', 'Neutral']
 emotion_images = {
     'Happy': cv2.imread('emojis/happy.png'),
